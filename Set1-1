@@ -1,0 +1,54 @@
+// 1.negative numbers in an array
+#include <stdio.h>
+
+int negNum(int arr[], int size)
+{
+  
+  int count=0;
+  for(int i=0; i<size; i++){
+      if(arr[i]<0){
+          count++;
+      }
+  }
+  return count;
+  
+}  
+int main()
+{
+    int arr[] = {23, 5, -1, -4, -22};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    printf("%d", negNum(arr, size));
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+// 2. Max int from input
+#include <stdio.h>
+
+int maxNo(int arr[]){
+    int max=arr[0];
+    for(int i=1; i<5; i++){
+        if(arr[i] > max)
+            max = arr[i];
+    }
+    return max;
+}
+int main()
+{
+    int arr[5];
+    for(int i=0; i<5; i++){
+        scanf("%d", &arr[i]);
+    }
+    printf("Max = %d", maxNo(arr));
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+// 3. merge sorted arrays
+// 4. reverse array print
+// 5. no. palindrome
+// 6. 1st occurrenece index 
+// 7. unique no. in an array
+// 8. count freq 
+// 9. pattern1 ||gm
+//
